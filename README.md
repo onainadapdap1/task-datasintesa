@@ -7,7 +7,7 @@ Below is a detailed overview of the available API endpoints(including example re
 <a id="upload-data"></a>
 <summary><b>Upload Data CSV</b></summary>
 
-**Endpoint:** `POST http://localhost:4000/raw-data/upload`
+**Endpoint:** `POST http://localhost:3000/raw-data/upload`
 
 **Description:** Insert data into database.
 
@@ -30,8 +30,9 @@ Below is a detailed overview of the available API endpoints(including example re
 **Endpoint:** `GET http://localhost:3000/raw-data/graph`
 - `enodebId` : The eNodeB ID example(1041096).
 - `cellId` : The Cell ID example(12).
-- `enodebId` : The start date for the data retrieval(1041096).
-- `enodebId` : The end date for the data retrieval(1041096).
+- `startDate` : The start date for the data retrieval.
+- `endDate` : The end date for the data retrieval.
+
 **Example Request:** `http://localhost:3000/raw-data/graph?enodebId=1041096&cellId=12&startDate=2022-01-01&endDate=2024-12-31`
 
 **Description:** Show graph.
