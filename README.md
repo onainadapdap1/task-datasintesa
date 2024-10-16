@@ -2,6 +2,71 @@
 
 Below is a detailed overview of the available API endpoints(including example requests and responses) and UI display.
 
+## Prasyarat
+
+**Pastikan telah menginstal hal berikut pada komputer Anda:**
+1. Node.js
+2. Git
+3. MongoDB
+
+## Running Locally 🖥️
+
+Clone Projek
+
+```bash
+git clone https://github.com/onainadapdap1/task-datasintesa.git
+```
+
+Arahkan ke direktori task-datasintesa
+
+```bash
+cd task-datasintesa
+```
+
+Hapus remote origin
+
+```bash
+git remote remove origin
+```
+
+Install dependensi - Server
+
+```bash
+npm install
+```
+
+Install dependensi - Client
+
+```bash
+npm install
+```
+
+Menambahkan file .env - Server
+
+```bash
+touch .env
+```
+
+Menambahkan Environment Variables - Server
+
+<details>
+  <summary>Klik Untuk Melihat!</summary>
+  
+  - `MONGO_URI=mongodb://localhost:27017/<db_name>`
+</details>
+
+Menjalankan server
+
+```bash
+npm run start
+```
+
+Menjalankan client
+
+```bash
+npm run dev
+```
+
 ## Upload data and show graph endpoints
 <details>
 <a id="upload-data"></a>
